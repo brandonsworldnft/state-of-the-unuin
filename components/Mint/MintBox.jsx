@@ -36,6 +36,7 @@ export const MintBox = () => {
         height={isLargerThan768 ? 335 : 170}
         placeholder="blur"
         draggable={false}
+        priority
       />
 
       <HStack

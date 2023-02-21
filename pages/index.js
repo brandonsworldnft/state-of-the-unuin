@@ -12,6 +12,8 @@ export default function Home() {
         <meta name="description" content="Brandon's World NFTs" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
+        <link rel="preload" href="/images/sm-bg.svg" as="image" />
+        <link rel="preload" href="/images/lg-bg.svg" as="image" />
       </Head>
 
       <NavBar />
