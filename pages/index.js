@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Brandon's World NFTs</title>
+        <title>Brandon&pos;s World NFTs</title>
         <meta name="description" content="Brandon's World NFTs" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
