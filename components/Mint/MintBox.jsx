@@ -4,7 +4,6 @@ import { Box, Stack, HStack, useMediaQuery } from "@chakra-ui/react";
 import { useUserContext } from "@/contexts/User";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import smImg from "../../public/images/racers-sm.png";
 import bgImg from "../../public/images/racers.png";
 import Image from "next/image";
 
@@ -30,7 +29,7 @@ export const MintBox = () => {
       align={"center"}
     >
       <Image
-        src={isLargerThan768 ? bgImg : smImg}
+        src={bgImg}
         alt="racers"
         width={isLargerThan768 ? 699 : 350}
         height={isLargerThan768 ? 335 : 170}
