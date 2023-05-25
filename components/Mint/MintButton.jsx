@@ -103,14 +103,15 @@ export const MintButton = (props) => {
 
   return (
     <GradientButton
-      buttonText="Mint"
+      buttonText="Coming Soon"
+      isDisabled
       fontSize="34px"
       py="6"
       px={{ base: "1.25em", sm: "2em" }}
       letterSpacing=".12em"
       fontFamily="DrukCond, sans-serif"
       isLoading={context?.isMinting}
-      onClick={mint}
+      // onClick={mint}
       loadingText="Minting"
     />
   );

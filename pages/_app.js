@@ -12,7 +12,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { ConnectKitProvider } from "connectkit";
 
 const { chains, provider } = configureChains(
-  [goerli],
+  [mainnet],
   [
     alchemyProvider({
       apiKey: process.env.NEXT_PUBLIC_ALCHEMY_KEY,

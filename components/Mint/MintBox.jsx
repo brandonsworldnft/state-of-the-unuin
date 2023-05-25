@@ -13,12 +13,13 @@ export const MintBox = () => {
   const [totalPrice, setTotalPrice] = useState(context?.data?.cost.toString());
 
   useEffect(() => {
-    if (context?.data?.cost) {
-      const weiAmount = ethers.utils.parseEther(context?.data?.cost.toString());
-      const mintPriceInWei = weiAmount.mul(context?.mintAmount);
-      const ethAmount = ethers.utils.formatEther(mintPriceInWei.toString()).toString();
-      setTotalPrice(ethAmount);
-    }
+    // if (context?.data?.cost) {
+    // const weiAmount = ethers.utils.parseEther(context?.data?.cost.toString());
+    const weiAmount = ethers.utils.parseEther("0.17");
+    const mintPriceInWei = weiAmount.mul(context?.mintAmount);
+    const ethAmount = ethers.utils.formatEther(mintPriceInWei.toString()).toString();
+    setTotalPrice(ethAmount);
+    // }
   }, [context?.mintAmount, context?.data?.cost]);
 
   return (
@@ -49,7 +50,7 @@ export const MintBox = () => {
       >
         <Stack align={"center"} whiteSpace={"nowrap"}>
           <Box color="white" letterSpacing={"2px"} fontSize={{ base: "48px", md: "64px", lg: "72px" }}>
-            {context?.data?.totalSupply || "0"}/1000
+            {context?.data?.totalSupply || "0"}/300
           </Box>
           <Box color="#B4B4B4" fontSize={{ base: "32px", md: "42px", lg: "52px" }}>
             Total: {totalPrice || "0.00"} ETH

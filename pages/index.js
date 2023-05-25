@@ -19,10 +19,11 @@ export default function Home() {
       <NavBar />
       <Box fontFamily={"DrukCond"} overflowX={"hidden"} mx="auto" bgColor="rgb(227,227,227)">
         <Box
+          // mt={{ base: "6", md: "0" }}
           mx="auto"
           bgImage={{ base: "/images/sm-bg.svg", md: "/images/lg-bg.svg" }}
-          bgSize={`cover`}
-          bgPos={"cover"}
+          bgSize={`contain`}
+          bgPos={"center"}
           bgRepeat="no-repeat"
           w="100vw"
           h="100vh"
@@ -31,7 +32,7 @@ export default function Home() {
         >
           <HStack
             pt="6"
-            pb="6rem"
+            pb="8rem"
             px="6"
             w="full"
             mx="auto"
